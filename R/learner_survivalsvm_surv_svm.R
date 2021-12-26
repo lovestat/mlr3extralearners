@@ -50,7 +50,7 @@ LearnerSurvSVM = R6Class("LearnerSurvSVM",
           diff.meth = p_fct(
             levels = c("makediff1", "makediff2", "makediff3"),
             tags = c("train")),
-          gamma.mu = p_uty(tags = c("train", "required")),
+          gamma.mu = p_uty(tags = c("train")),
           opt.meth = p_fct(
             default = "quadprog", levels = c("quadprog", "ipop"),
             tags = "train"),
